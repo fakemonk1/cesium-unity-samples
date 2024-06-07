@@ -48,55 +48,48 @@ Followed https://community.cesium.com/t/cmake-not-found-cesium-unity-for-visiono
 CompileCesiumForUnityNative.cs
 Cmake.cs
 
-<!-- 
-
-Got error while building in /cesium-unity-abp/Packages/com.cesium.unity/native~/build-VisionOS/build.log File
-
-
+### 9. In the next step, Got error while building 
+in /cesium-unity-abp/Packages/com.cesium.unity/native~/build-VisionOS/build.log File
+```
+/Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~/Shared/src/UnityAssetAccessor.cpp:8:10: fatal error: 'DotNet/CesiumForUnity/Helpers.h' file not found
 #include <DotNet/CesiumForUnity/Helpers.h>
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1 error generated.
-make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/__/Shared/src/UnityAssetAccessor.cpp.o] Error 1
-1 error generated.
-1 error generated.
-make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/src/CesiumIonRasterOverlayImpl.cpp.o] Error 1
-make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/src/CesiumBingMapsRasterOverlayImpl.cpp.o] Error 1
 1 error generated.
 make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/src/CesiumCreditSystemImpl.cpp.o] Error 1
-1 error generated.
-make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/src/CesiumDebugColorizeTilesRasterOverlayImpl.cpp.o] Error 1
-1 error generated.
-In file included from /Users/ashishgupta/dev/repos/cesium-unity-abp/Packages/com.cesium.unity/native~/Runtime/src/CesiumFeatureImpl.cpp:1:
-/Users/ashishgupta/dev/repos/cesium-unity-abp/Packages/com.cesium.unity/native~/Runtime/src/CesiumFeatureImpl.h:5:10: fatal error: 'DotNet/CesiumForUnity/CesiumMetadataValue.h' file not found
+make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/__/Shared/src/UnityAssetAccessor.cpp.o] Error 1
+In file included from /Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~/Runtime/src/CesiumFeatureImpl.cpp:1:
+/Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~/Runtime/src/CesiumFeatureImpl.h:5:10: fatal error: 'DotNet/CesiumForUnity/CesiumMetadataValue.h' file not found
 #include <DotNet/CesiumForUnity/CesiumMetadataValue.h>
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/src/Cesium3DTilesetImpl.cpp.o] Error 1
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1 error generated.
 make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/src/CesiumFeatureImpl.cpp.o] Error 1
-/Users/ashishgupta/dev/repos/cesium-unity-abp/Packages/com.cesium.unity/native~/Runtime/src/CesiumFeatureIdAttributeImpl.cpp:3:10: fatal error: 'DotNet/CesiumForUnity/CesiumFeatureIdAttribute.h' file not found
+/Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~/Runtime/src/CesiumFeatureIdAttributeImpl.cpp:3:10: fatal error: 'DotNet/CesiumForUnity/CesiumFeatureIdAttribute.h' file not found
 #include <DotNet/CesiumForUnity/CesiumFeatureIdAttribute.h>
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1 error generated.
 make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/src/CesiumFeatureIdAttributeImpl.cpp.o] Error 1
-/Users/ashishgupta/dev/repos/cesium-unity-abp/Packages/com.cesium.unity/native~/Runtime/src/CesiumFeatureIdTextureImpl.cpp:6:10: fatal error: 'DotNet/CesiumForUnity/CesiumFeatureIdTexture.h' file not found
+/Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~/Runtime/src/CesiumFeatureIdTextureImpl.cpp:6:10: fatal error: 'DotNet/CesiumForUnity/CesiumFeatureIdTexture.h' file not found
 #include <DotNet/CesiumForUnity/CesiumFeatureIdTexture.h>
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1 error generated.
 make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/src/CesiumFeatureIdTextureImpl.cpp.o] Error 1
-/Users/ashishgupta/dev/repos/cesium-unity-abp/Packages/com.cesium.unity/native~/Runtime/src/Cesium3DTileImpl.cpp:7:10: fatal error: 'DotNet/Unity/Mathematics/double4x4.h' file not found
+In file included from /Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~/Runtime/src/CesiumIonServerHelper.cpp:3:
+/Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~/Runtime/src/UnityTilesetExternals.h:5:10: fatal error: 'DotNet/CesiumForUnity/Cesium3DTileset.h' file not found
+#include <DotNet/CesiumForUnity/Cesium3DTileset.h>
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/src/CesiumIonServerHelper.cpp.o] Error 1
+/Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~/Runtime/src/Cesium3DTileImpl.cpp:7:10: fatal error: 'DotNet/Unity/Mathematics/double4x4.h' file not found
 #include <DotNet/Unity/Mathematics/double4x4.h>
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1 error generated.
 make[2]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/src/Cesium3DTileImpl.cpp.o] Error 1
-In file included from /Users/ashishgupta/dev/repos/cesium-unity-abp/Packages/com.cesium.unity/native~/Runtime/src/CesiumIonServerHelper.cpp:3:
-/Users/ashishgupta/dev/repos/cesium-unity-abp/Packages/com.cesium.unity/native~/Runtime/src/UnityTilesetExternals.h:5:10: fatal error: 'DotNet/CesiumForUnity/Cesium3DTileset.h' file not found
-#include <DotNet/CesiumForUnity/Cesium3DTileset.h>
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Runtime/CMakeFiles/CesiumForUnityNative-Runtime.dir/all] Error 2
 
-ran the interop command again
-Still did not work
+```
 
-### 9. make the following changes in Editor/ConfigureReinterop.cs 
+### 10. make the following changes in Editor/ConfigureReinterop.cs 
 
 ```
 #elif UNITY_VISIONOS
@@ -104,10 +97,13 @@ Still did not work
 ```
 
 and following changes in Runtime/ConfigureReinterop.cs file
+```
 #elif UNITY_VISIONOS
         public const string CppOutputPath = "../native~/Runtime/generated-visionOS";
 
+```
 
+### 11. After the above steps, dotnet/xxxx/xxx.h errors got resolved
 Got the following error after xcode build:
 
 ```
