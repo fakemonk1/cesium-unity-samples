@@ -430,11 +430,11 @@ namespace CesiumForUnity
                     startInfo.UseShellExecute = false;
                     if (library.Platform == BuildTarget.StandaloneOSX || library.Platform == BuildTarget.iOS)
                     {
-                        startInfo.FileName = File.Exists("/Applications/CMake.app/Contents/bin/cmake") ? "/Applications/CMake.app/Contents/bin/cmake" : "cmake";
+                        startInfo.FileName = File.Exists("/opt/homebrew/bin/cmake") ? "/opt/homebrew/bin/cmake" : "cmake";
                     }
                     else
                     {
-                        startInfo.FileName = "cmake";
+                        startInfo.FileName = "/opt/homebrew/bin/cmake";
                     }
                     startInfo.CreateNoWindow = true;
                     startInfo.WorkingDirectory = library.SourceDirectory;

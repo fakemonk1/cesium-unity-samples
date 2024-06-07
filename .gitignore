@@ -9,6 +9,7 @@ Assets/StarterAssets/
 .vsconfig
 *.sln
 *.csproj
+build/
 
 Packages/com.cesium.unity/bin/
 Packages/com.cesium.unity/obj/

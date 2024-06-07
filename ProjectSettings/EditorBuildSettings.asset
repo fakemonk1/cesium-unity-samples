@@ -13,6 +13,8 @@ EditorBuildSettings:
       type: 2}
     UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: ba9d59585eafd43eab9a16ee53fddd74,
       type: 2}
+    com.unity.polyspatial.xr.xr_settings: {fileID: 11400000, guid: f5aa2dba30b5f4a90804343ae951390b,
+      type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: cabf8c1b8ff0946d285fbecf211bd0f7,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d89629dc31f4f48fca7b96535784bc02,

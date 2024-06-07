@@ -39,15 +39,15 @@ cmake --build build -j14 --target install --config Debug
 - com.unity.polyspatial.visionos 1.2.3
 - com.unity.polyspatial.xr 1.2.3
 
-<!-- ### 8. While making the build, got the following error:
+### 8. While making the build, got the following error:
 ```
-Win32Exception: ApplicationName='cmake', 
+Win32Exception: ApplicationName='cmake', CommandLine='-B /Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~/build-VisionOS -S /Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~ -DEDITOR=false -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX="/Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/Plugins/VisionOS" -DREINTEROP_GENERATED_DIRECTORY=generated-VisionOS', CurrentDirectory='/Users/ashishgupta/dev/repos/cesium-unity-samples/Packages/com.cesium.unity/native~', Native error= Cannot find the specified file 
 ```
 
 Followed https://community.cesium.com/t/cmake-not-found-cesium-unity-for-visionos/32634/2?u=ashish-analog and made the changes in the following files:
 CompileCesiumForUnityNative.cs
 Cmake.cs
-TODO:<commit_id_here> -->
+
 <!-- 
 
 Got error while building in /cesium-unity-abp/Packages/com.cesium.unity/native~/build-VisionOS/build.log File
